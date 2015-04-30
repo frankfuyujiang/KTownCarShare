@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kendo UI Snippet</title>
+
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.318/styles/kendo.common.min.css">
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.318/styles/kendo.rtl.min.css">
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.318/styles/kendo.default.min.css">
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.318/styles/kendo.dataviz.min.css">
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.318/styles/kendo.dataviz.default.min.css">
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.318/styles/kendo.mobile.all.min.css">
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2015.1.318/js/kendo.all.min.js"></script>
+<script src="http://cdn.kendostatic.com/2015.1.318/js/angular.min.js"></script>
+<script src="http://cdn.kendostatic.com/2015.1.318/js/jszip.min.js"></script>
+</head>
+<body>
+  
+<form name="myForm" action="createevent.php" onsubmit="return validateForm()" method="get"> 
+<p>Date<input type="text" name="mydate" id="datetimepicker" /></p>
+<p>Location 
+<Select name="location">
+    <option value="1">Princess Street</option>
+    <option value="2">Cataraqui Center</option>
+</Select>
+<input type="submit" name="submit" value="Submit" />
+
+</form>
+
+
+<script>
+$("#datetimepicker").kendoDateTimePicker({
+    format: "yyyy-MM-dd hh:mm tt"
+});
+</script>
+</body>
+</html>
